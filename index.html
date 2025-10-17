@@ -1,121 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sujan Roy | Ultra Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="MyH_ZXmYfE8D3u5iHa7tODNYysPhybxM7dWcc5i3nSI">
+
+	<!-- SEO Meta -->
+	<title>Sujan Roy | Portfolio – App & Web Projects, Skills, Resume</title>
+  <meta name="description" content="Portfolio of Sujan Roy – B.Sc. Mathematics student, data enthusiast, and tech explorer. Explore my projects, skills, and academic journey.">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Language" content="en">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="Sujan Roy – Portfolio">
+	<meta property="og:description" content="Discover the portfolio of Sujan Roy, a B.Sc. Mathematics student passionate about data science, technology, and learning.">
+	<meta property="og:url" content="https://portfolioskr.netlify.app/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Sujan Roy Portfolio">
+	<meta property="og:image" content="https://github.com/SKR0411.png">
+	<meta property="og:image:width" content="1080">
+	<meta property="og:image:height" content="1080">
+	
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="https://github.com/SKR0411.png">
+	<meta name="twitter:title" content="Sujan Roy – Portfolio">
+	<meta name="twitter:description" content="Portfolio of Sujan Roy, a B.Sc. Mathematics student and aspiring data scientist exploring technology and analytics.">
+	<meta name="twitter:image" content="https://github.com/SKR0411.png">
+	
+	<!-- Favicon -->
+	<link rel="icon" href="https://raw.githubusercontent.com/SKR0411/PortfolioSkr/main/assets/sujan_roy_round_pp.png" type="image/png">
+	
+	<!-- Canonical -->
+	<link rel="canonical" href="https://portfolioskr.netlify.app/">
+
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header id="hero" class="fade-in">
-    <h1><span id="typing-text" class="highlight"></span></h1>
-    <p>Data Enthusiast • Tech Explorer • B.Sc. Math Student</p>
-    <a href="#contact" class="btn">📬 Let's Connect</a>
-  </header>
+ 	<!-- Hero Section -->
+	<header id="hero" class="fade-in">
+		<div id="ppp" onclick="viewPp()">
+			<img class="gh-pp" src="https://github.com/SKR0411.png" alt="Sujan Roy">
+		</div>
+	  <h1><span id="typing-text" class="highlight"></span></h1>
+	  <h2 style="display:none">Full Name: Sujan Kumar Roy (SKR)</h2>
+	  <p>Data Enthusiast • Tech Explorer • B.Sc. Math Student</p>
+	  <a href="#social" class="btn">📬 Let's Connect</a>
+	</header>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div class="skill-card">Mathematics</div>
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">XML</div>
-      <div class="skill-card">Java</div>
-      <div class="skill-card">Problem Solving</div>
-      <div class="skill-card">Logical Thinking</div>
-    </div>
-  </section>
+	<main class="main">
 
-  <!-- Projects Section -->
-  <section id="projects" class="section fade-in">
-    <h2>My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">📱 Land Area Calculator App</div>
-      <div class="project-card">🎂 Age Calculator</div>
-      <div class="project-card">🎂 BMI Calculator</div>
-      <div class="project-card">🎂 TicTacToe Game</div>
-      <div class="project-card">🌐 Personal Portfolio Site</div>
-      <div class="project-card">🌐 E-commerce website</div>
-      <div class="project-card">🌐 Documents Box</div>
-      <div class="project-card">📊 HS Result Analyzer (Coming Soon)</div>
-    </div>
-  </section>
+	  <!-- Skills Section -->
+	  <section id="skills" class="section fade-in">
+	    <h2>Skills</h2>
+	    <div class="skill-grid">
+	      <div class="skill-card">C & C++</div>
+	      <div class="skill-card">Python</div>
+	      <div class="skill-card">Java</div>
+	      <div class="skill-card">JavaScript</div>
+	      <div class="skill-card">HTML & CSS</div>
+	      <div class="skill-card">XML</div>
+	      <div class="skill-card">Problem Solving</div>
+	      <div class="skill-card">Logical Thinking</div>
+	    </div>
+	  </section>
+	
+	  <!-- App Projects Section -->
+	  <section id="app-projects" class="section fade-in">
+	    <h2>My App Projects</h2>
+	    <div class="project-list" onclick="openPage('https://skrapphub.netlify.app')">
+	      <div class="project-card">Land Area Calculator</div>
+	      <div class="project-card">Age Calculator</div>
+	      <div class="project-card">BMI Calculator</div>
+	      <div class="project-card">TicTacToe Game</div>
+	      <div class="project-card">App Hub(App Store)</div>
+	      <div class="project-card">RDN (E-commerce)</div>
+	      <div class="project-card">Calculator</div>
+	    </div>
+	  </section>
+	
+		<!-- Web Projects Section -->
+	  <section id="web-projects" class="section fade-in">
+	    <h2>My Web Projects</h2>
+	    <div class="project-list">
+	      <div class="project-card">
+	        <a href="https://portfolioskr.netlify.app/" target="_blank">Portfolio</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://skrapphub.netlify.app/" target="_blank">App Hub (App Store)</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://rdn2025.netlify.app/" target="_blank">RDN (E-commerce)</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://knowlet.netlify.app/" target="_blank">Knowlet</a>
+	      </div>
+	    </div>
+	  </section>
+	  
+	  <!-- Tools Section -->
+	  <section id="tools" class="section fade-in">
+	    <h2>Tools I use</h2>
+	    <div class="project-list">
+	      <div class="project-card">
+	        <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree" target="_blank">Acode</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://play.google.com/store/apps/details?id=com.tyron.code&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">CodeAssist</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://play.google.com/store/apps/details?id=com.github.android" target="_blank">GitHub</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://app.netlify.com/" target="_blank">Netlify</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://play.google.com/store/apps/details?id=com.viscouspot.gitsync" target="_blank">Git Sync</a>
+	      </div>
+	    </div>
+	  </section>
+	
+	  <!-- Social Media Section -->
+	  <section id="social" class="section fade-in">
+	    <h2>Connect With Me</h2>
+	    <div class="project-list">
+	      <div class="project-card">
+	        <a href="https://www.facebook.com/sujanroy0411" target="_blank">🌐 Facebook</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://www.instagram.com/sujanroy0411" target="_blank">📸 Instagram</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://www.linkedin.com/in/SKR0411" target="_blank">💼 LinkedIn</a>
+	      </div>
+	      <div class="project-card">
+				  <a href="mailto:sujanroy63836@gmail.com">📧 Email</a>
+				</div>
+	      <div class="project-card">
+	        <a href="https://peerlist.io/sujanroy63836" target="_blank">🎖️ Peerlist</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://leetcode.com/SKR0411" target="_blank">🎯 LeetCode</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://github.com/SKR0411" target="_blank">💻 GitHub</a>
+	      </div>
+	      <div class="project-card">
+	        <a href="https://dev.to/@skr0411" target="_blank">👨‍💻 Dev</a>
+	      </div>
+	    </div>
+	  </section>
+	  
+	  <!-- Contact Section -->
+		<section id="contact" class="section fade-in">  
+		  <h2>Contact Me</h2>  
+		  <form id="contact-form">
+		    <input type="text" id="name" placeholder="Your Name" required>
+		    <textarea id="message" placeholder="Your Message" required></textarea>
+		    <button type="submit">Send Mail</button>
+		  </form>  
+		</section>
 
-  <!-- Education Section -->
-  <section id="education" class="section fade-in">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>22 No. Rongpur L.P School</h3>
-        <p>📍 PP to Class III</p>
-      </div>
-      <div class="timeline-item">
-        <h3>A.B.C. Talent Academy</h3>
-        <p>📍 Class IV to X</p>
-      </div>
-      <div class="timeline-item">
-        <h3>M.A. Junior College</h3>
-        <p>📍 XI–XII | PCM</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Gurucharan University</h3>
-        <p>📍 B.Sc in Mathematics</p>
-      </div>
-    </div>
-  </section>
+	  <!-- Education Section -->
+	  <section id="education" class="section fade-in">
+	    <h2>Education</h2>
+	    <div class="timeline">
+	      <div class="timeline-item">
+	        <h3>22 No. Rongpur L.P School</h3>
+	        <p>📍 PP to Class III</p>
+	      </div>
+	      <div class="timeline-item">
+	        <h3>A.B.C. Talent Academy</h3>
+	        <p>📍 Class IV to X</p>
+	      </div>
+	      <div class="timeline-item">
+	        <h3>M.A. Junior College</h3>
+	        <p>📍 XI–XII | PCM</p>
+	      </div>
+	      <div class="timeline-item">
+	        <h3>Gurucharan University</h3>
+	        <p>📍 B.Sc in Mathematics</p>
+	      </div>
+	    </div>
+	  </section>
+	
+	  <!-- Resume Section -->
+	  <section id="resume" class="section fade-in">
+	    <h2>My Resume</h2>
+	    <p>You can download my resume below to know more about my academic and professional journey.</p><br>
+	    <a href="https://raw.githubusercontent.com/SKR0411/PortfolioSkr/main/assets/skr_resume.pdf" class="btn">📄 Download Resume</a>
+	  </section>
+	
+	  <!-- Featured Goals -->
+	  <!--<section id="goals" class="section fade-in">
+	    <h2>Future Goals</h2>
+	    <ul>
+	      <li>🎯 Become a skilled Data Scientist using Math & Programming</li>
+	      <li>📚 Complete M.Sc. and explore research in Applied Mathematics</li>
+	      <li>💻 Build real-world tech solutions for local and global problems</li>
+	      <li>🧑‍🏫 Inspire students with free resources and tutorials in future</li>
+	    </ul>
+	  </section>-->
+	  
+	  <!-- Certifications Section -->
+	  <!--<section id="certifications" class="section fade-in">
+	    <h2>Certifications</h2>
+	    <ul>
+	    	<li>✔️ C & C++</li>
+	      <li>✔️ Python Basics</li>
+	      <li>✔️ HTML & CSS Web Design Bootcamp </li>
+	      <li>✔️ Introduction to Data Science</li>
+	    </ul>
+	  </section>-->
+	  
+	</main>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section fade-in">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  
-  <!-- Resume Section -->
-  <section id="resume" class="section fade-in">
-    <h2>My Resume</h2>
-    <p>You can download my resume below to know more about my academic and professional journey.</p><br>
-    <a href="Sujan_Roy_Resume.pdf" class="btn">📄 Download Resume</a>
-  </section>
-
-  <!-- Featured Goals -->
-  <section id="goals" class="section fade-in">
-    <h2>Future Goals</h2>
-    <ul>
-      <li>🎯 Become a skilled Data Scientist using Math & Programming</li>
-      <li>📚 Complete M.Sc. and explore research in Applied Mathematics</li>
-      <li>💻 Build real-world tech solutions for local and global problems</li>
-      <li>🧑‍🏫 Inspire students with free resources and tutorials in future</li>
-    </ul>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="section fade-in">
-    <h2>Certifications</h2>
-    <ul>
-      <li>✔️ Python Basics</li>
-      <li>✔️ HTML & CSS Web Design Bootcamp </li>
-      <li>✔️ Introduction to Data Science</li>
-    </ul>
-  </section>
+	<!--Image popup-->
+	<div id="profilePopup" class="popup-container">
+	  <div class="popup-content">
+	    <span class="close-btn" onclick="closePopup()">&times;</span>
+	    <div id="popup-pp">
+	    	<img src="https://github.com/SKR0411.png" alt="Sujan Roy" class="profile-pic">
+	    </div>
+	    <h2>Sujan Roy</h2>
+	  </div>
+	</div>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <p>Made with 💻 by Sujan Roy</p>
-    <p>📧 sujanroy63836@gmail.com | <a href="https://www.facebook.com/sujanroy0411" target="_blank">Facebook</a></p>
+    <p>Made with ❤️ by Sujan Roy</p>
     <p>&copy; 2025 Sujan Roy. All Rights Reserved</p>
-    <p>  <a href="https://skrpripol.netlify.app" id="privacyLink" target="_blank">Privacy Policy</a></p>
+    <p>📧  <a href="mailto:sujanroy63836@gmail.com">sujanroy63836@gmail.com</a></p>
+    <p>🐞 <a href="https://github.com/SKR0411/PortfolioSkr/issues" target="_blank">Report an Issue</a></p>
   </footer>
+ 
+	<!-- Structured Data for SEO -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Sujan Roy",
+	  "fullName": "Sujan Kumar Roy",
+	  "sortName": "SKR",
+	  "dateOfBirth": "4th November 2007",
+	  "description": "B.Sc. Mathematics student, data enthusiast, and tech explorer.",
+	  "image": "https://github.com/SKR0411.png",
+	  "url": "https://portfolioskr.netlify.app",
+	  "sameAs": [
+	    "https://github.com/SKR0411",
+	    "https://linkedin.com/in/SKR0411",
+			"https://leetcode.com/u/SKR0411",
+			"https://dev.to/@SKR0411",
+	    "https://facebook.com/sujanroy0411",
+			"https://instagram.com/sujanroy0411",
+			"https://peerlist.io/sujanroy63836"
+	  ]
+	}
+	</script>
+	
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <script src="script.js"></script>
 </body>
 </html>

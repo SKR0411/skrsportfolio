@@ -11,6 +11,119 @@ body {
   line-height: 1.6;
 }
 
+#ppp {
+	width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #f0f0ff;
+  /* Example border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Example shadow */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth transition for hover effects */
+}
+
+#ppp:hover {
+  transform: scale(1.05);
+  /* Slight zoom on hover */
+}
+
+.gh-pp {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Base styles for the popup container */
+.popup-container {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent black background */
+  backdrop-filter: blur(5px);
+  /* Optional: Adds a blur effect */
+  -webkit-backdrop-filter: blur(5px);
+  /* For Safari */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the popup content box */
+.popup-content {
+  background-color: #5278a7;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 450px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+  transform: scale(0.9);
+  opacity: 0;
+  animation: fadeInScale 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Keyframe animation for the popup to appear with a bounce effect */
+@keyframes fadeInScale {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Style for the close button */
+.close-btn {
+  color: #fff2c2;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#popup-pp {
+	width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the profile picture itself */
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Styles for text and buttons inside the popup */
+.popup-content h2 {
+  margin: 0 0 10px;
+  color: #f2f2f2;
+  font-size: 1.8em;
+}
+
 .navbar {
   background-color: #003366;
   color: white;
@@ -76,13 +189,17 @@ body {
   background-color: #e6b800;
 }
 
+.main {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
 .section {
-  max-width: 1000px;
-  margin: 60px auto;
+  margin: 60px 20px;
   padding: 30px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .section h2 {
@@ -91,13 +208,15 @@ body {
   margin-bottom: 25px;
 }
 
-.skill-grid, .project-list {
+.skill-grid,
+.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
-.skill-card, .project-card {
+.skill-card,
+.project-card {
   background: #f0f6ff;
   padding: 15px;
   border-radius: 10px;
@@ -106,7 +225,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.skill-card:hover, .project-card:hover {
+.skill-card:hover,
+.project-card:hover {
   transform: translateY(-5px);
 }
 
@@ -119,7 +239,25 @@ body {
   margin-bottom: 20px;
 }
 
-form input, form textarea {
+/* Social links style */
+.project-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #f0f0f0;
+  color: #0073e6;
+  transform: scale(1.05);
+}
+
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -159,8 +297,15 @@ form button:hover {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
 }
 
 .fade-in {
@@ -179,16 +324,19 @@ form button:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   .nav-links {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }
+  
   #hero h1 {
     font-size: 2rem;
   }
 }
-a#privacyLink {
+
+#privacyLink {
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
@@ -196,6 +344,6 @@ a#privacyLink {
   font-weight: bold;
 }
 
-a#privacyLink:hover {
+#privacyLink:hover {
   color: #0056b3;
 }
