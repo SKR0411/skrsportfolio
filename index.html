@@ -30,10 +30,13 @@
 	<meta name="twitter:image" content="https://github.com/SKR0411.png">
 	
 	<!-- Favicon -->
-	<link rel="icon" href="https://raw.githubusercontent.com/SKR0411/PortfolioSkr/main/assets/sujan_roy_round_pp.png" type="image/png">
+	<link rel="icon" href="https://portfolioskr.netlify.app/assets/sujan_roy_round_pp.png" type="image/png">
 	
 	<!-- Canonical -->
 	<link rel="canonical" href="https://portfolioskr.netlify.app/">
+
+  <!-- Main Page Image -->
+  <link rel="image_src" href="https://portfolioskr.netlify.app/assets/sujan_roy_round_pp.png">
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -191,7 +194,7 @@
 	  <section id="resume" class="section fade-in">
 	    <h2>My Resume</h2>
 	    <p>You can download my resume below to know more about my academic and professional journey.</p><br>
-	    <a href="https://raw.githubusercontent.com/SKR0411/PortfolioSkr/main/assets/skr_resume.pdf" class="btn">📄 Download Resume</a>
+	    <a href="https://portfolioskr.netlify.app/assets/skr_resume.pdf" class="btn">📄 Download Resume</a>
 	  </section>
 	
 	  <!-- Featured Goals -->
@@ -215,6 +218,27 @@
 	      <li>✔️ Introduction to Data Science</li>
 	    </ul>
 	  </section>-->
+	  
+	  <!-- Hidden Image Gallery (SEO-visible but user-hidden) -->
+    <section id="hidden-images" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+      <h2>Gallery of Suajn Kumar Roy</h2>
+      
+      <img src="https://portfolioskr.netlify.app/assets/sujan_roy.jpg" 
+           alt="Sujan Kumar Roy profile picture" 
+           title="Sujan Kumar Roy Portfolio Profile">
+      
+      <img src="https://portfolioskr.netlify.app/assets/sujan_roy_1.jpg" 
+           alt="Sujan Kumar Roy portrait photo" 
+           title="Sujan Kumar Roy Portrait">
+      
+      <img src="https://portfolioskr.netlify.app/assets/sujan_roy_2.jpg" 
+           alt="Sujan Kumar Roy working on laptop" 
+           title="Sujan Kumar Roy Coding Photo">
+      
+      <img src="https://portfolioskr.netlify.app/assets/sujan_roy_3.jpg" 
+           alt="Sujan Kumar Roy presenting project" 
+           title="Sujan Kumar Roy Presentation">
+    </section>
 	  
 	</main>
 
@@ -247,7 +271,12 @@
 	  "sortName": "SKR",
 	  "dateOfBirth": "4th November 2007",
 	  "description": "B.Sc. Mathematics student, data enthusiast, and tech explorer.",
-	  "image": "https://github.com/SKR0411.png",
+	  "image": [
+      "https://portfolioskr.netlify.app/assets/sujan_roy.jpg",
+      "https://portfolioskr.netlify.app/assets/sujan_roy_1.jpg",
+      "https://portfolioskr.netlify.app/assets/sujan_roy_2.jpg",
+      "https://portfolioskr.netlify.app/assets/sujan_roy_3.jpg"
+    ],
 	  "url": "https://portfolioskr.netlify.app",
 	  "creator": {
       "@type": "Person",
@@ -265,7 +294,6 @@
 	}
 	</script>
 	
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <script src="script.js"></script>
 </body>
 </html>
