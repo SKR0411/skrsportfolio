@@ -1,4 +1,4 @@
-const textToType = "Hi, I'm Suajn Kumar Roy";
+const textToType = "Sujan Kumar Roy – Portfolio";
 const typingElement = document.getElementById("typing-text");
 let charIndex = 0;
 
