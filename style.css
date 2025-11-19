@@ -1,3 +1,6 @@
+/* ----------------------------------
+   Global Settings
+---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -5,346 +8,260 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, #f4f7ff 0%, #e0ecff 100%);
-  color: #222;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #fff;
   line-height: 1.6;
 }
 
-#ppp {
-	width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 2px solid #f0f0ff;
-  /* Example border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Example shadow */
-  transition: transform 0.3s ease-in-out;
-  /* Smooth transition for hover effects */
+html {
+  scroll-behavior: smooth;
 }
 
-#ppp:hover {
-  transform: scale(1.05);
-  /* Slight zoom on hover */
+/* Soft glow accent */
+:root {
+  --accent: #4df2c9;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.2);
 }
 
-.gh-pp {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Base styles for the popup container */
-.popup-container {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Semi-transparent black background */
-  backdrop-filter: blur(5px);
-  /* Optional: Adds a blur effect */
-  -webkit-backdrop-filter: blur(5px);
-  /* For Safari */
-  justify-content: center;
-  align-items: center;
-}
-
-/* Styles for the popup content box */
-.popup-content {
-  background-color: #5278a7;
-  margin: auto;
-  padding: 25px;
-  border-radius: 12px;
-  width: 85%;
-  max-width: 450px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  position: relative;
-  transform: scale(0.9);
+/* Fade animation */
+.fade-in {
   opacity: 0;
-  animation: fadeInScale 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadeIn 1.2s ease forwards;
 }
 
-/* Keyframe animation for the popup to appear with a bounce effect */
-@keyframes fadeInScale {
+@keyframes fadeIn {
   to {
-    transform: scale(1);
     opacity: 1;
   }
 }
 
-/* Style for the close button */
-.close-btn {
-  color: #fff2c2;
-  position: absolute;
-  top: 15px;
-  right: 18px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-#popup-pp {
-	width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 4px solid #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Style for the profile picture itself */
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Styles for text and buttons inside the popup */
-.popup-content h2 {
-  margin: 0 0 10px;
-  color: #f2f2f2;
-  font-size: 1.8em;
-}
-
-.navbar {
-  background-color: #003366;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar .logo {
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links li a:hover {
-  text-decoration: underline;
-}
-
+/* ----------------------------------
+   Hero Section
+---------------------------------- */
 #hero {
   text-align: center;
-  padding: 100px 20px;
-  background: #004080;
-  color: white;
+  padding: 80px 20px;
+}
+
+#hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 25px rgba(77, 242, 201, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#hero img:hover {
+  transform: scale(1.05);
 }
 
 #hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-top: 20px;
 }
 
 #hero p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .btn {
-  background-color: #ffcc00;
-  color: #003366;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 30px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 10px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #e6b800;
+  background: #38d8b4;
 }
 
-.main {
-	max-width: 1000px;
-	margin: 0px auto;
-}
-
+/* ----------------------------------
+   Sections
+---------------------------------- */
 .section {
-  margin: 60px 20px;
-  padding: 30px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .section h2 {
-  text-align: center;
-  color: #004080;
+  font-size: 2.3rem;
   margin-bottom: 25px;
+  color: var(--accent);
 }
 
-.skill-grid,
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-}
-
+/* ----------------------------------
+   Glass Cards
+---------------------------------- */
 .skill-card,
-.project-card {
-  background: #f0f6ff;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 500;
-  transition: transform 0.3s ease;
+.project-card,
+.timeline-item {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
 }
 
 .skill-card:hover,
-.project-card:hover {
+.project-card:hover,
+.timeline-item:hover {
   transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
+/* ----------------------------------
+   Skill Grid
+---------------------------------- */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+/* ----------------------------------
+   Project List
+---------------------------------- */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ----------------------------------
+   Timeline (Education)
+---------------------------------- */
 .timeline {
-  border-left: 3px solid #004080;
-  padding-left: 20px;
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
 }
 
 .timeline-item {
-  margin-bottom: 20px;
+  text-align: left;
+  padding: 25px;
+  border-left: 4px solid var(--accent);
 }
 
-/* Social links style */
-.project-card a {
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+/* ----------------------------------
+   Contact Form
+---------------------------------- */
+#contact-form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.project-card a:hover {
-  background-color: #f0f0f0;
-  color: #0073e6;
-  transform: scale(1.05);
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-form button {
-  background: #004080;
-  color: white;
-  padding: 10px 25px;
+#contact-form input,
+#contact-form textarea {
+  padding: 14px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid var(--glass-border);
+}
+
+#contact-form button {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent);
+  font-weight: 700;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #003366;
+#contact-form button:hover {
+  background: #39dcaf;
 }
 
-.site-footer {
-  background-color: #00264d;
-  color: white;
+/* ----------------------------------
+   Image Popup
+---------------------------------- */
+.popup-container {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup-content {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  padding: 25px;
+  border-radius: 18px;
+  max-width: 350px;
   text-align: center;
-  padding: 25px 20px;
-  margin-top: 60px;
+  position: relative;
+}
+
+.profile-pic {
+  width: 210px;
+  border-radius: 12px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ----------------------------------
+   Footer
+---------------------------------- */
+.site-footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #0f0f0f;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .site-footer a {
-  color: #66ccff;
+  color: var(--accent);
 }
 
-#typing-text::after {
-  content: '|';
-  animation: blink 1s infinite;
-  color: #ffcc00;
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0;
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* ----------------------------------
+   Responsive
+---------------------------------- */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
   #hero h1 {
     font-size: 2rem;
   }
-}
 
-#privacyLink {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
+  .skill-grid,
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
 }
-
-#privacyLink:hover {
-  color: #0056b3;
-}
-
