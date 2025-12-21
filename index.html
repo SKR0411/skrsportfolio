@@ -2,295 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Sujan Kumar Roy | Portfolio</title>
+  <meta name="description" content="Portfolio of Sujan Kumar Roy, B.Sc Mathematics student and aspiring data scientist.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="MyH_ZXmYfE8D3u5iHa7tODNYysPhybxM7dWcc5i3nSI">
-  <meta name="theme-color" content="#0a0a0a">
-
-	<!-- SEO Meta -->
-	<title>Sujan Kumar Roy | Portfolio – App & Web Projects, Skills, Resume</title>
-	<meta name="author" content="Sujan Kumar Roy">
-	<meta name="keywords" content="Sujan Kumar Roy, Portfolio, Data Science, App Developer, Web Developer, Mathematics, Projects, Resume">
-  <meta name="description" content="Portfolio of Sujan Kumar Roy – B.Sc. Mathematics student, data enthusiast, and tech explorer. Explore my projects, skills, and academic journey.">
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="Content-Language" content="en">
-	
-	<!-- Open Graph -->
-	<meta property="og:image:alt" content="Portfolio profile photo of Sujan Kumar Roy">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:title" content="Sujan Kumar Roy – Portfolio">
-	<meta property="og:description" content="Discover the portfolio of Sujan Kumar Roy, a B.Sc. Mathematics student passionate about data science, technology, and learning.">
-	<meta property="og:url" content="https://skrsportfolio.netlify.app/">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Sujan Kumar Roy Portfolio">
-	<meta property="og:image" content="https://skrsportfolio.netlify.app/assets/sujan_roy.jpg">
-	<meta property="og:image:width" content="1080">
-	<meta property="og:image:height" content="1080">
-	
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Sujan Kumar Roy – Portfolio">
-	<meta name="twitter:description" content="Portfolio of Sujan Kumar Roy, a B.Sc. Mathematics student and aspiring data scientist exploring technology and analytics.">
-	<meta name="twitter:image" content="https://skrsportfolio.netlify.app/assets/sujan_roy.jpg">
-	
-	<!-- Favicon -->
-	<link rel="icon" href="https://skrsportfolio.netlify.app/assets/sujan_roy_round_pp.png" type="image/png">
-	
-	<!-- Canonical -->
-	<link rel="canonical" href="https://skrsportfolio.netlify.app/">
-
-  <!-- Main Page Image -->
-  <link rel="image_src" href="https://skrsportfolio.netlify.app/assets/sujan_roy_round_pp.png">
-
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://yourdomain.com/">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
- 	<!-- Hero Section -->
-	<header id="hero" class="fade-in">
-		<div id="ppp" onclick="viewPp()">
-			<img class="gh-pp" src="https://skrsportfolio.netlify.app/assets/sujan_roy.jpg" alt="Sujan Kumar Roy">
-		</div>
-	  <h1><span id="typing-text" class="highlight"></span></h1>
-    <noscript><h1>Sujan Kumar Roy – Portfolio</h1></noscript>
-	  <p>Data Enthusiast • Tech Explorer • B.Sc. Math Student</p>
-	  <a href="#social" class="btn">📬 Let's Connect</a>
-	</header>
+<nav class="navbar">
+  <a href="/" class="logo">SKR</a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/skills.html">Skills</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/gallery.html">Gallery</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-	<main class="main">
+<header id="hero" class="fade-in">
+  <img src="assets/images/sujan_roy.jpg" alt="Sujan Kumar Roy" loading="lazy">
+  <h1><span id="typing-text"></span></h1>
+  <p>Data Enthusiast • Tech Explorer • B.Sc Mathematics Student</p>
+  <a href="/projects.html" class="btn">View Projects</a>
+  <a href="/contact.html" class="btn">Contact Me</a>
+</header>
 
-	  <!-- Skills Section -->
-	  <section id="skills" class="section fade-in">
-	    <h2>Skills</h2>
-	    <div class="skill-grid">
-	      <div class="skill-card">C & C++</div>
-	      <div class="skill-card">Python</div>
-	      <div class="skill-card">Java</div>
-	      <div class="skill-card">JavaScript</div>
-	      <div class="skill-card">HTML & CSS</div>
-	      <div class="skill-card">XML</div>
-	      <div class="skill-card">Problem Solving</div>
-	      <div class="skill-card">Logical Thinking</div>
-	    </div>
-	  </section>
-	
-	  <!-- App Projects Section -->
-	  <section id="app-projects" class="section fade-in">
-	    <h2>My App Projects</h2>
-	    <div class="project-list" onclick="openPage('https://skrapphub.netlify.app')">
-	      <div class="project-card">Land Area Calculator</div>
-	      <div class="project-card">DigitalRDN (E-commerce)</div>
-	    </div>
-	  </section>
-	
-		<!-- Web Projects Section -->
-	  <section id="web-projects" class="section fade-in">
-	    <h2>My Web Projects</h2>
-	    <div class="project-list">
-	      <div class="project-card">
-	        <a href="https://knowlet.netlify.app/" target="_blank">Knowlet</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://skrsportfolio.netlify.app/" target="_blank">Portfolio</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://digitalrdn.netlify.app/" target="_blank">DigitalRDN (E-commerce)</a>
-	      </div>
-	    </div>
-	  </section>
-	  
-	  <!-- Tools Section -->
-	  <section id="tools" class="section fade-in">
-	    <h2>Tools I use</h2>
-	    <div class="project-list">
-	      <div class="project-card">
-	        <a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree" target="_blank">Acode</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://play.google.com/store/apps/details?id=com.tyron.code&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">CodeAssist</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://play.google.com/store/apps/details?id=com.github.android" target="_blank">GitHub</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://app.netlify.com/" target="_blank">Netlify</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://play.google.com/store/apps/details?id=com.viscouspot.gitsync" target="_blank">Git Sync</a>
-	      </div>
-	    </div>
-	  </section>
-	
-	  <!-- Social Media Section -->
-	  <section id="social" class="section fade-in">
-	    <h2>Connect With Me</h2>
-	    <div class="project-list">
-	      <div class="project-card">
-	        <a href="https://www.facebook.com/sujanroy0411" target="_blank">🌐 Facebook</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://www.instagram.com/sujanroy0411" target="_blank">📸 Instagram</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://www.linkedin.com/in/SKR0411" target="_blank">💼 LinkedIn</a>
-	      </div>
-	      <div class="project-card">
-			<a href="mailto:sujanroy63836@gmail.com">📧 Email</a>
-		  </div>
-	      <div class="project-card">
-	        <a href="https://peerlist.io/sujanroy63836" target="_blank">🎖️ Peerlist</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://leetcode.com/SKR0411" target="_blank">🎯 LeetCode</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://github.com/SKR0411" target="_blank">💻 GitHub</a>
-	      </div>
-	      <div class="project-card">
-	        <a href="https://dev.to/@skr0411" target="_blank">👨‍💻 Dev</a>
-	      </div>
-	    </div>
-	  </section>
-	  
-	  <!-- Contact Section -->
-		<section id="contact" class="section fade-in">  
-		  <h2>Contact Me</h2>
-		  <form id="contact-form">
-		    <input type="text" id="name" placeholder="Your Name" required>
-		    <textarea id="message" placeholder="Your Message" required></textarea>
-		    <button type="submit">Send Mail</button>
-		  </form>
-		</section>
+<section class="section fade-in">
+  <h2>Who I Am</h2>
+  <p class="content-text">
+    I am a B.Sc. Mathematics student with strong analytical thinking and a deep
+    interest in data science, web technologies, and problem solving.
+    I enjoy turning abstract ideas into practical solutions using code.
+  </p>
+  <p class="content-text">
+    My background in mathematics helps me think logically, write clean code,
+    and approach problems with structure rather than guesswork.
+  </p>
+</section>
 
-	  <!-- Education Section -->
-	  <section id="education" class="section fade-in">
-	    <h2>Education</h2>
-	    <div class="timeline">
-	      <div class="timeline-item">
-	        <h3>22 No. Rongpur L.P School</h3>
-	        <p>📍 PP to Class III</p>
-	      </div>
-	      <div class="timeline-item">
-	        <h3>A.B.C. Talent Academy</h3>
-	        <p>📍 Class IV to X</p>
-	      </div>
-	      <div class="timeline-item">
-	        <h3>M.A. Junior College</h3>
-	        <p>📍 XI–XII | PCM</p>
-	      </div>
-	      <div class="timeline-item">
-	        <h3>Gurucharan University</h3>
-	        <p>📍 B.Sc in Mathematics</p>
-	      </div>
-	    </div>
-	  </section>
-	
-	  <!-- Resume Section -->
-	  <section id="resume" class="section fade-in">
-	    <h2>My Resume</h2>
-	    <p>You can download my resume below to know more about my academic and professional journey.</p><br>
-	    <a href="https://skrsportfolio.netlify.app/assets/skr_resume.pdf" class="btn">📄 Download Resume</a>
-	  </section>
-	
-	  <!-- Featured Goals -->
-	  <!--<section id="goals" class="section fade-in">
-	    <h2>Future Goals</h2>
-	    <ul>
-	      <li>🎯 Become a skilled Data Scientist using Math & Programming</li>
-	      <li>📚 Complete M.Sc. and explore research in Applied Mathematics</li>
-	      <li>💻 Build real-world tech solutions for local and global problems</li>
-	      <li>🧑‍🏫 Inspire students with free resources and tutorials in future</li>
-	    </ul>
-	  </section>-->
-	  
-	  <!-- Certifications Section -->
-	  <!--<section id="certifications" class="section fade-in">
-	    <h2>Certifications</h2>
-	    <ul>
-	    	<li>✔️ C & C++</li>
-	      <li>✔️ Python Basics</li>
-	      <li>✔️ HTML & CSS Web Design Bootcamp </li>
-	      <li>✔️ Introduction to Data Science</li>
-	    </ul>
-	  </section>-->
-	  
-	  <!-- Hidden Image Gallery (SEO-visible but user-hidden) -->
-    <section id="hidden-images" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
-      <h2>Gallery of Sujan Kumar Roy</h2>
-      
-      <img src="https://skrsportfolio.netlify.app/assets/sujan_roy.jpg" 
-           alt="Sujan Kumar Roy profile picture" 
-           title="Sujan Kumar Roy Portfolio Profile">
-      
-      <img src="https://skrsportfolio.netlify.app/assets/sujan_roy_1.jpg" 
-           alt="Sujan Kumar Roy portrait photo" 
-           title="Sujan Kumar Roy Portrait">
-      
-      <img src="https://skrsportfolio.netlify.app/assets/sujan_roy_2.jpg" 
-           alt="Sujan Kumar Roy working on laptop" 
-           title="Sujan Kumar Roy Coding Photo">
-      
-      <img src="https://skrsportfolio.netlify.app/assets/sujan_roy_3.jpg" 
-           alt="Sujan Kumar Roy presenting project" 
-           title="Sujan Kumar Roy Presentation">
-    </section>
-	  
-	</main>
+<section class="section fade-in">
+  <h2>What I’m Currently Focused On</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <strong>Data Science Foundations</strong>
+      <p>Statistics, Python, and logical modeling</p>
+    </div>
+    <div class="project-card">
+      <strong>Web Applications</strong>
+      <p>Clean UI, performance, and usability</p>
+    </div>
+    <div class="project-card">
+      <strong>Problem Solving</strong>
+      <p>Algorithms, logic, and structured thinking</p>
+    </div>
+  </div>
+</section>
 
-	<!--Image popup-->
-	<div id="profilePopup" class="popup-container">
-	  <div class="popup-content">
-	    <span class="close-btn" onclick="closePopup()">&times;</span>
-	    <div id="popup-pp">
-	    	<img src="https://skrsportfolio.netlify.app/assets/sujan_roy.jpg" alt="Sujan Kumar Roy" class="profile-pic">
-	    </div>
-	    <h2>Sujan Kumar Roy</h2>
-	  </div>
-	</div>
+<section class="section fade-in">
+  <h2>Quick Highlights</h2>
+  <div class="skill-grid">
+    <div class="skill-card">Strong Math Background</div>
+    <div class="skill-card">Project-Oriented Learning</div>
+    <div class="skill-card">Clean & Maintainable Code</div>
+    <div class="skill-card">Mobile-First Development</div>
+    <div class="skill-card">Self-Learner</div>
+    <div class="skill-card">Consistency Over Hype</div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>Made with ❤️ by Sujan Kumar Roy</p>
-    <p>&copy; 2025 Sujan Kumar Roy. All Rights Reserved</p>
-    <p>📧  <a href="mailto:sujanroy63836@gmail.com">sujanroy63836@gmail.com</a></p>
-    <p>🐞 <a href="https://github.com/SKR0411/skrsportfolio/issues" target="_blank">Report an Issue</a></p>
-  </footer>
- 
-	<!-- Structured Data for SEO -->
-	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "Person",
-	  "name": "Sujan Kumar Roy",
-	  "alternativeName": "Sujan Roy",
-	  "sortName": "SKR",
-	  "birthDate": "2007-11-04",
-	  "description": "B.Sc. Mathematics student, data enthusiast, and tech explorer.",
-	  "dateModified": "2025-11-02",
-	  "image": [
-        "https://skrsportfolio.netlify.app/assets/sujan_roy.jpg",
-        "https://skrsportfolio.netlify.app/assets/sujan_roy_1.jpg",
-        "https://skrsportfolio.netlify.app/assets/sujan_roy_2.jpg",
-        "https://skrsportfolio.netlify.app/assets/sujan_roy_3.jpg"
-      ],
-	  "url": "https://skrsportfolio.netlify.app",
-	  "creator": {
-        "@type": "Person",
-        "name": "Sujan Kumar Roy"
-      },
-	  "sameAs": [
-	    "https://github.com/SKR0411",
-	    "https://linkedin.com/in/SKR0411",
-		"https://leetcode.com/u/SKR0411",
-		"https://dev.to/@SKR0411",
-	    "https://facebook.com/sujanroy0411",
-		"https://instagram.com/sujanroy0411",
-		"https://peerlist.io/sujanroy63836"
-	  ],
-	  
-	}
-	</script>
-	
-  <script src="script.js"></script>
+<footer class="site-footer">
+  <p>© 2025 Sujan Kumar Roy</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
