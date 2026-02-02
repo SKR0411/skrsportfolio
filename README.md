@@ -3,7 +3,7 @@
 A personal **portfolio website** showcasing my projects, skills, education, and online profiles.  
 Built to highlight my journey as a **B.Sc. Mathematics student**, **data enthusiast**, and **tech explorer**, this site serves as a digital resume and project hub.
 
-🌐 **Live Site:** [https://skrsportfolio.netlify.app](https://sujanroy.in)
+🌐 **Live Site:** [https://sujanroy.in](https://sujanroy.in)
 
 ---
 
