@@ -91,12 +91,4 @@ This portfolio includes full SEO support with:
 - `twitter:` card meta for Twitter sharing.  
 - `canonical` link to prevent duplicate indexing.  
 - `application/ld+json` structured data (Schema.org) describing me as a **Person** entity.  
-- Hidden gallery images for better search visibility.
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/SKR0411/skrsportfolio.git
+- Gallery images for better search visibility.
