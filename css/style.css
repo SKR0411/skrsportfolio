@@ -332,3 +332,26 @@ body {
     margin-bottom: 18px;
 }
 
+/* =====================
+   PROJECT PREVIEW FIX
+===================== */
+
+.preview-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Force desktop view + scale */
+.preview-container iframe {
+    width: 1200px;
+    height: 800px;
+    border: none;
+
+    transform: scale(0.25);
+    transform-origin: top left;
+
+    pointer-events: none;
+}
