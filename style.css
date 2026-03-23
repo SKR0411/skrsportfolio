@@ -253,10 +253,10 @@ body {
     height: var(--desktop-height);
     border: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(0.25); 
-    transform-origin: top left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    transform-origin: center;
     pointer-events: none; 
 }
 
