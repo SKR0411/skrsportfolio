@@ -1,7 +1,6 @@
 /* =====================
    TYPING EFFECT (HOME)
 ===================== */
-
 const typingElement = document.getElementById("typing-text");
 const textToType = "Sujan Kumar Roy";
 
@@ -22,7 +21,6 @@ if (typingElement) {
 /* =====================
    FADE-IN ON SCROLL
 ===================== */
-
 const observer = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
@@ -37,22 +35,35 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
 /* =====================
-   ACTIVE NAV LINK
+   DYNAMIC ACTIVE NAV LINK ON SCROLL
 ===================== */
+const sections = document.querySelectorAll("section, header");
+const navLinks = document.querySelectorAll(".navbar ul li a");
 
-const currentPage = location.pathname.split("/").pop() || "index.html";
+window.addEventListener("scroll", () => {
+    let current = "";
 
-document.querySelectorAll(".navbar a").forEach(link => {
-    const linkPage = link.getAttribute("href").replace("/", "");
-    if (linkPage === currentPage) {
-        link.classList.add("active");
-    }
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        // Check if the scroll position is within this section
+        if (scrollY >= sectionTop - 150) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+        }
+    });
 });
 
 /* =====================
    CONTACT FORM (MAILTO)
 ===================== */
-
 const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
@@ -64,12 +75,9 @@ if (contactForm) {
 
         if (!name || !message) return;
 
-        const subject = encodeURIComponent(
-            "Portfolio Message from " + name
-        );
+        const subject = encodeURIComponent("Portfolio Message from " + name);
         const body = encodeURIComponent(message);
 
-        window.location.href =
-            `mailto:sujanroy63836@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:sujanroy63836@gmail.com?subject=${subject}&body=${body}`;
     });
 }

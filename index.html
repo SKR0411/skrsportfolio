@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sujan Kumar Roy | Portfolio</title>
-    <meta name="description" content="Portfolio of Sujan Kumar Roy, B.Sc Mathematics student and aspiring data scientist.">
+    <meta name="description" content="Portfolio of Sujan Kumar Roy, BCA student and aspiring data scientist.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/sujan-roy-5.jpg">
     <link rel="canonical" href="https://sujanroy.in/">
@@ -13,70 +13,177 @@
 <body>
 
 <nav class="navbar">
-    <a href="/" class="logo">SKR</a>
+    <a href="#home" class="logo">SKR</a>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/skills.html">Skills</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<header id="hero" class="fade-in">
-    <img src="https://github.com/skr0411.png" alt="Sujan Kumar Roy" loading="lazy">
+<header id="home" class="fade-in">
+    <img src="https://github.com/sujankumarroy.png" alt="Sujan Kumar Roy" loading="lazy">
     <h1><span id="typing-text"></span></h1>
     <p>Data Enthusiast • Tech Explorer • BCA Student</p>
-    <a href="/projects.html" class="btn">View Projects</a>
-    <a href="/contact.html" class="btn">Contact Me</a>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
 </header>
 
-<section class="section fade-in">
-    <h2>Who I Am</h2>
+<section id="about" class="section fade-in">
+    <h2>About Me</h2>
     <p class="content-text">
-        I am a BCA student with strong analytical thinking and a deep
-        interest in data science, programming, web technologies and problem solving.
-        I enjoy turning abstract ideas into practical solutions using code.
+        I am Sujan Kumar Roy, a BCA student with a strong interest in Mathematics, data science, programming and real-world problem solving. I enjoy building things, understanding systems logically, and improving my skills through practice and projects.
     </p>
     <p class="content-text">
-        My background in mathematics helps me think logically, write clean code,
-        and approach problems with structure rather than guesswork.
+        My background in mathematics helps me think logically, write clean code, and approach problems with structure rather than guesswork.
     </p>
-</section>
 
-<section class="section fade-in">
-    <h2>What I’m Currently Focused On</h2>
-    <div class="project-list">
-        <div class="project-card">
-            <strong>Data Science Foundations</strong>
-            <p>Statistics, Python, and logical modeling</p>
+    <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--accent);">Education</h3>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Lovely Professional University</h3>
+            <p>Bachelor of Computer Application (BCA)</p>
         </div>
-        <div class="project-card">
-            <strong>Web Applications</strong>
-            <p>Clean UI, performance, and usability</p>
+        <div class="timeline-item">
+            <h3>Gurucharan University</h3>
+            <p>B.Sc Mathematics</p>
         </div>
-        <div class="project-card">
-            <strong>Problem Solving</strong>
-            <p>Algorithms, logic, and structured thinking</p>
+        <div class="timeline-item">
+            <h3>M.A. Junior College</h3>
+            <p>Class XI–XII (PCM)</p>
+        </div>
+        <div class="timeline-item">
+            <h3>A.B.C Talent Academy</h3>
+            <p>Class IV–X</p>
         </div>
     </div>
 </section>
 
-<section class="section fade-in">
-    <h2>Quick Highlights</h2>
-    <div class="skill-grid">
-        <div class="skill-card">Strong Math Background</div>
-        <div class="skill-card">Project-Oriented Learning</div>
-        <div class="skill-card">Clean & Maintainable Code</div>
-        <div class="skill-card">Mobile-First Development</div>
-        <div class="skill-card">Self-Learner</div>
-        <div class="skill-card">Consistency Over Hype</div>
+<section id="skills" class="section fade-in">
+    <h2>Technical Skills</h2>
+    <div class="skill-grid" style="margin-bottom: 40px;">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C & C++</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">HTML & CSS</div>
+        <div class="skill-card">Firebase</div>
+        <div class="skill-card">Supabase</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Problem Solving</div>
+        <div class="skill-card">Logical Thinking</div>
+    </div>
+
+    <h2>Tools I Use</h2>
+    <div class="project-list">
+        <div class="project-card"><div class="project-info">Acode</div></div>
+        <div class="project-card"><div class="project-info">GitHub</div></div>
+        <div class="project-card"><div class="project-info">Netlify</div></div>
+        <div class="project-card"><div class="project-info">CodeAssist</div></div>
+    </div>
+</section>
+
+<section id="projects" class="section fade-in projects-container">
+    <h2>Web Projects</h2>
+    <div class="project-grid">
+        <div class="browser-window">
+            <div class="browser-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="preview-viewport">
+                <iframe src="https://knowlet.in/" tabindex="-1"></iframe>
+            </div>
+            <div class="project-meta">
+                <h3>Knowlet</h3>
+                <p>Educational web app for students.</p>
+                <a href="https://knowlet.in/" target="_blank" class="view-btn">Launch Site →</a>
+            </div>
+        </div>
+
+        <div class="browser-window">
+            <div class="browser-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="preview-viewport">
+                <iframe src="https://landcalculatorlite.netlify.app/" tabindex="-1"></iframe>
+            </div>
+            <div class="project-meta">
+                <h3>Land Calculator</h3>
+                <p>High-precision land area calculation tool.</p>
+                <a href="https://landcalculatorlite.netlify.app/" target="_blank" class="view-btn">Launch Site →</a>
+            </div>
+        </div>
+
+        <div class="browser-window">
+            <div class="browser-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="preview-viewport">
+                <iframe src="https://digitalrdn.netlify.app/" tabindex="-1"></iframe>
+            </div>
+            <div class="project-meta">
+                <h3>DigitalRDN</h3>
+                <p>Modern E-commerce interface project.</p>
+                <a href="https://digitalrdn.netlify.app/" target="_blank" class="view-btn">Launch Site →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section fade-in">
+    <h2>Gallery</h2>
+    <p class="content-text">
+        This gallery highlights my projects and personal learning journey. Each image reflects practical work, experimentation, and steady progress over time.
+    </p>
+
+    <div class="gallery-grid" style="margin-top: 30px;">
+        <figure class="gallery-item">
+            <img src="assets/images/knowlet-home.jpg" alt="Knowlet educational web application home page" loading="lazy">
+            <figcaption>Knowlet – Educational Web App</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/images/digital-rdn.jpg" alt="DigitalRDN e-commerce website interface" loading="lazy">
+            <figcaption>DigitalRDN – E-commerce Website</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/images/land-calculator.jpg" alt="Land area calculator application interface" loading="lazy">
+            <figcaption>Land Calculator App</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/images/sujan-roy-5.jpg" alt="Me wearing formal tie" loading="lazy">
+            <figcaption>Dressed up for success.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/images/sujan-roy-2.jpg" alt="Me taking a selfie indoors" loading="lazy">
+            <figcaption>Casual Sunday mood</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/images/sujan-roy-3.jpg" alt="selfie with sky" loading="lazy">
+            <figcaption>Selfie with sky</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form" style="margin-bottom: 40px;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Email</button>
+    </form>
+
+    <h2>Find Me Online</h2>
+    <div class="project-list" style="justify-content: center; display: flex; gap: 20px;">
+        <a href="https://github.com/sujankumarroy" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/SKR0411" target="_blank" class="btn">LinkedIn</a>
+        <a href="mailto:sujanroy63836@gmail.com" class="btn">Email</a>
     </div>
 </section>
 
 <footer class="site-footer">
-    <p>© 2025 Sujan Kumar Roy</p>
+    <p>© 2026 Sujan Kumar Roy</p>
 </footer>
 
 <script src="js/script.js"></script>
