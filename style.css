@@ -319,6 +319,9 @@ body {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 10px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
 }
 
 /* =====================
