@@ -1,0 +1,470 @@
+/* =====================
+   RESET & VARIABLES
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0f0f0f;
+    --bg-light: #1c1c1c;
+    --accent: #4df2c9;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    
+    /* Project Mockup Variables */
+    --prj-card-bg: rgba(255, 255, 255, 0.05);
+    --prj-border: rgba(255, 255, 255, 0.1);
+    --desktop-width: 1280px;
+    --desktop-height: 800px;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-light));
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--accent);
+}
+
+/* =====================
+   HERO / HEADER
+===================== */
+#home {
+    text-align: center;
+    padding: 120px 20px 70px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    box-shadow: 0 0 25px rgba(77, 242, 201, 0.5);
+    margin-bottom: 18px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    opacity: 0.85;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin: 6px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background: #38d8b4;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+    padding: 90px 22px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--accent);
+}
+
+.content-text {
+    max-width: 760px;
+    margin: auto;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+/* =====================
+   GLASS CARDS & GRIDS
+===================== */
+.skill-card,
+.project-card,
+.timeline-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.timeline-item:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+/* =====================
+   TIMELINE
+===================== */
+.timeline {
+    max-width: 720px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.timeline-item {
+    text-align: left;
+    padding: 25px;
+    border-left: 4px solid var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* =====================
+   PROJECTS BROWSER MOCKUP
+===================== */
+.projects-container {
+    padding: 80px 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.browser-window {
+    background: var(--prj-card-bg);
+    border: 1px solid var(--prj-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.browser-window:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent);
+}
+
+.browser-header {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px;
+    display: flex;
+    gap: 6px;
+    border-bottom: 1px solid var(--prj-border);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.preview-viewport {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.preview-viewport iframe {
+    width: var(--desktop-width);
+    height: var(--desktop-height);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    transform-origin: center;
+    pointer-events: none; 
+}
+
+.project-meta {
+    padding: 20px;
+}
+
+.project-meta h3 {
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.project-meta p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.view-btn:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   GALLERY
+===================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 14px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+#contact-form {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact-form button {
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: var(--accent);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #39dcaf;
+}
+
+/* =====================
+   FOOTER & ANIMATIONS
+===================== */
+.site-footer {
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    background: #0d0d0d;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    #home h1 { font-size: 2rem; }
+    .navbar ul { display: none; /* Consider a hamburger menu for mobile */ }
+    .section h2 { font-size: 1.9rem; }
+}
+
+
+
+/* Update the existing timeline-item to use flexbox */
+.timeline-item {
+    text-align: left;
+    padding: 25px;
+    border-left: 4px solid var(--accent);
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically */
+    gap: 20px; /* Space between logo and text */
+}
+
+/* Style for the education logos */
+.edu-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Ensures the logo isn't stretched */
+    background: #ffffff; /* Adds a white background in case logos are dark/transparent */
+    padding: 5px;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    flex-shrink: 0; /* Prevents the logo from shrinking on small screens */
+}
+
+/* Make sure the text container handles its own spacing */
+.edu-text h3 {
+    margin-bottom: 5px;
+    font-size: 1.15rem;
+}
+
+.edu-text p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 480px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.skill-title {
+    margin: 25px 0 20px;
+    color: var(--accent);
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-card i {
+    font-size: 40px;
+    transition: 0.3s ease;
+}
+
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill-card:hover i,
+.skill-card:hover img {
+    transform: scale(1.2);
+}
