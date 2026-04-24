@@ -327,6 +327,38 @@ body {
     margin-bottom: 15px;
 }
 
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 18px;
+}
+
+.tech-stack span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    transition: 0.3s ease;
+}
+
+.tech-stack span i {
+    font-size: 1rem;
+}
+
+.tech-stack span:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(77, 242, 201, 0.08);
+    box-shadow: 0 8px 18px rgba(77, 242, 201, 0.12);
+}
+
 .view-btn {
     display: inline-block;
     color: var(--accent);
