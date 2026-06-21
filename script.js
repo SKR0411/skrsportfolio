@@ -78,6 +78,6 @@ if (contactForm) {
         const subject = encodeURIComponent("Portfolio Message from " + name);
         const body = encodeURIComponent(message);
 
-        window.location.href = `mailto:sujanroy63836@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:sujanroydev+portfolio@gmail.com?subject=${subject}&body=${body}`;
     });
 }
