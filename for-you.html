@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Little Something For You ❤️</title>  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at top left, #ff7eb3, transparent 35%),
+        radial-gradient(circle at bottom right, #ff758c, transparent 40%),
+        linear-gradient(135deg, #1a0b16, #3a1028);
+    }
+
+    .hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      font-size: 24px;
+      animation: floatUp linear forwards;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 0.8;
+      }
+
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(900px, 92%);
+      margin: auto;
+      padding: 30px 0 60px;
+    }
+
+    section {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .card {
+      width: min(700px, 100%);
+      padding: 50px 30px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .small-text {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+
+    .name {
+      color: #ffd1df;
+      text-shadow: 0 0 20px rgba(255, 170, 200, 0.8);
+    }
+
+    .heart-big {
+      font-size: 5rem;
+      display: inline-block;
+      animation: heartbeat 1.3s infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      20% {
+        transform: scale(1.2);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+
+      60% {
+        transform: scale(1.15);
+      }
+    }
+
+    button {
+      border: none;
+      padding: 15px 28px;
+      border-radius: 50px;
+      margin-top: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #8b1238;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+    }
+
+    .reasons {
+      display: grid;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .reason {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: reveal 0.7s forwards;
+    }
+
+    .reason:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .reason:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .reason:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes reveal {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .love-message {
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12);
+      animation: reveal 0.7s forwards;
+    }
+
+    .signature {
+      margin-top: 25px;
+      font-style: italic;
+      font-size: 1.3rem;
+    }
+
+    .scroll {
+      margin-top: 35px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 40px 20px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style></head><body>  <div class="hearts" id="hearts"></div>  <main><!-- First Screen -->
+<section>
+  <div class="card">
+    <div class="small-text">I made something for you</div>
+
+    <h1>
+      Hey, <span class="name">Her Name</span> ❤️
+    </h1>
+
+    <div class="heart-big">❤️</div>
+
+    <p>
+      There are some things I find difficult to say in person...
+      so I decided to make this little place just for you.
+    </p>
+
+    <button onclick="document.getElementById('story').scrollIntoView()">
+      Open My Heart ❤️
+    </button>
+
+    <div class="scroll">Scroll down ↓</div>
+  </div>
+</section>
+
+<!-- About Her -->
+<section id="story">
+  <div class="card">
+    <div class="small-text">Something I wanted to tell you</div>
+
+    <h2>You became special to me 🌸</h2>
+
+    <p>
+      I don't know exactly when it happened.
+      Maybe it was your smile.
+      Maybe it was the way you talk.
+      Or maybe it was just the feeling I get whenever you're around.
+    </p>
+
+    <br>
+
+    <p>
+      Somewhere along the way,
+      I started looking forward to seeing you a little more than usual.
+    </p>
+  </div>
+</section>
+
+<!-- Reasons -->
+<section>
+  <div class="card">
+    <div class="small-text">A few reasons</div>
+
+    <h2>What I like about you ❤️</h2>
+
+    <div class="reasons">
+      <div class="reason">
+        ✨ Your smile can make an ordinary day feel better.
+      </div>
+
+      <div class="reason">
+        🌸 I love the little things that make you uniquely you.
+      </div>
+
+      <div class="reason">
+        ❤️ Somehow, thinking about you always makes me smile.
+      </div>
+
+      <div class="reason">
+        🌙 Being around you feels special in a way I can't completely explain.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final -->
+<section>
+  <div class="card">
+    <div class="small-text">And finally...</div>
+
+    <h2>There's something I want to ask you ❤️</h2>
+
+    <p>
+      I don't want to pressure you, and I don't expect you to feel
+      the same way.
+    </p>
+
+    <br>
+
+    <p>
+      I just wanted to be honest about something...
+    </p>
+
+    <div class="heart-big">💗</div>
+
+    <button onclick="showLove()">
+      Click for the truth
+    </button>
+
+    <div class="love-message hidden" id="loveMessage">
+      <h2>I like you. A lot. ❤️</h2>
+
+      <p>
+        You mean more to me than I probably manage to show.
+        And if you're comfortable with it,
+        I'd love the chance to know you even better.
+      </p>
+
+      <p class="signature">
+        — From someone who thinks you're really special ❤️
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>  <script>
+    const heartsContainer = document.getElementById("hearts");
+
+    function createHeart() {
+      const heart = document.createElement("span");
+
+      heart.classList.add("heart");
+      heart.innerHTML = Math.random() > 0.5 ? "❤️" : "💗";
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 25 + 15 + "px";
+      heart.style.animationDuration = Math.random() * 5 + 6 + "s";
+
+      heartsContainer.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 11000);
+    }
+
+    setInterval(createHeart, 700);
+
+    function showLove() {
+      const message = document.getElementById("loveMessage");
+
+      message.classList.remove("hidden");
+
+      message.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      for (let i = 0; i < 25; i++) {
+        setTimeout(createHeart, i * 80);
+      }
+    }
+  </script></body>
+</html>
